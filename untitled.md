@@ -17,16 +17,15 @@ Once again using my love of video games to drive my choice on data, I have decid
 ## Data
 The data for this project will come from Twitch's API, dev.twitch.tv
 
-<br></br>
-<br></br>
+
 
 ## Tools
 The data for this project will be stored in a database using MongoDB
-<br></br>
+
 Cron job will be used to automate refreshing of information
-<br></br>
+
 Streamilt and Heroku will be used to distribute the dashboard
-<br></br>
+
 Tableau will be used to display information.
 
 <br></br>
