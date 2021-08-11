@@ -10,31 +10,15 @@ from pymongo import MongoClient
 from pprint import pprint
 
 from utils import game_info, viewer_record
+import config
 
 import streamlit as st
 
 
-##twitch permissions
-
-client_id = 'tn9oskedgjzumaz7seved6dl8z642j'
-client_secret = '5bbdqqsykhqu6t4fhroopms0hcvy6w'
-
-access_code = requests.post('https://id.twitch.tv/oauth2/token?client_id='+client_id+\
-                            '&client_secret='+client_secret+\
-                            '&grant_type=client_credentials')
-
-access_token = access_code.json()['access_token']
 
 
-headers = {
-    'Client-ID' : client_id,
-    'Authorization' : 'Bearer '+access_token
-}
 
-
-#df = pd.read_csv('streams.csv')
-
-df = pd.DataFrame((requests.get('https://api.twitch.tv/helix/streams?first=100', headers=headers)).json()['data'])
+df = pd.DataFrame((requests.get('https://api.twitch.tv/helix/streams?first=100', headers=config.headers)).json()['data'])
 
 
 
