@@ -3,3 +3,4 @@ numpy
 plotly==5.1.0
 matplotlib
 streamlit
+pymongo==3.11.4
