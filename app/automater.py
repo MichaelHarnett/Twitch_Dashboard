@@ -16,7 +16,7 @@ top_streams_pull = requests.get('https://api.twitch.tv/helix/streams?first=100',
 
 
 
-client = MongoClient()
+client = MongoClient(config.server)
 
 db = client.twitch
 

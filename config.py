@@ -14,3 +14,6 @@ headers = {
     'Client-ID' : client_id,
     'Authorization' : 'Bearer '+access_token
 }
+
+
+server = 'mongodb+srv://spikeymikeyy:Endoplasm1c@cluster0.hd11y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
