@@ -13,6 +13,8 @@ import requests
 from pymongo import MongoClient
 from pprint import pprint
 
+import config
+
 client = MongoClient(config.server)
 db = client.twitch
 

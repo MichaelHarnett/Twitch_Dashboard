@@ -17,3 +17,4 @@ headers = {
 
 
 server = 'mongodb+srv://spikeymikeyy:Endoplasm1c@cluster0.hd11y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
