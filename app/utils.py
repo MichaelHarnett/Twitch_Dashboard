@@ -29,7 +29,7 @@ def game_info(game):
     st.sidebar.write('The total number of streamers is:', total_streamers)
     st.sidebar.write('The average number of viewers is: ', average_viewers)
     st.sidebar.write('The average number of streamers is: ', average_streamers)
-    #return viewers, streamers
+    
 
 
 def viewer_record(game):
