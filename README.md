@@ -4,21 +4,37 @@ A Data Engineering focused project from Metis
 <br><br>
 
 This project was geared towards engineering an end to end daata pipeline. In keeping with the theme of most of my other projects, I chose to center this pipeline around video games. I decided to create a live updating dashboard based on information from Twitch. For those that don't know, Twich is one of the largest video game streaming sites. The idea was to create a dashboard for aspiring new streamers, that would show what the current top games are, the number of viewers watching theses games, and the number of streamers actively streaming the game. I accomplished this by pulling information from Twitch's Developer API and storing the information in a Mongo Atlas data base. I set up a recurring .py script using crontab that pulls the information once every hour, that allows for historical tracking. By storing the pulls in a database, I was able to also display more specific information for a specific game. Such as viewer counts from the last 24 hours, as well as average streamer and viewer count.
-<br>
+<br><br>
 I displayed the results on a Streamlit Sharing app that is publicly available [here](https://share.streamlit.io/michaelharnett/twitch_dashboard/main/app/app.py)
+<br>
+This project was created as a 2 week project while at Metis. The app is functioning, but could use improvements, mostly with styling. Aditionally, the first iteration of this project lived natively on a regular Mongo data base on my computer. Moving the app to streamlit sharing caused me to re-build the database remotely with Mongo Atlas. Since this project was already completed, and will be used mainly for demonstrative purposes, the recurring script has been stopped, and the database is no longer growing. 
+<br><br>
+
 
 # Notebook Descripitons 
 <hr>
-<b>twitch_prelim</b> This notebook was used to learn the intricacies of the Twitch Developers API, finding the right way to retrieve the data needed
-<br>
-<b>mongo_prelim</b> Used to learn how to connect the information pulled from the API into a database
-<br>
-<b>plotly_prelim</b> Used to create different graphs and visualizations, and test different aggregations
-<br>
-<b>automater.py</b> Python script used in conjunction with crontab to automate pulling of information every hour, and storing the pull into my database
-<br>
-<b>app.py</b> Streamlit app code used to connect everything in a web-based dashboard
-<b>utils.py</b>Different functions I created to be called in app.py
+<b>Prelim Code Folder:</b> This notebook holds all the notebooks I used to first poke around with the twitch API, MongoDB, and Plotly
+<ul>
+  <li><b>twitch_prelim</b> This notebook was used to learn the intricacies of the Twitch Developers API, finding the right way to retrieve the data needed</li>
+  <br>
+  <li><b>mongo_prelim</b> Used to learn how to connect the information pulled from the API into a database</li>
+  <br>
+  <li><b>plotly_prelim</b> Used to create different graphs and visualizations, and test different aggregations</li>
+</ul>
+<br><br>
+<b>App Folder:</b>
+<ul>
+  <li><b>app.py</b> Streamlit app code used to connect everything in a web-based dashboard</li>
+  <br>
+  <li><b>automater.py</b> Python script used in conjunction with crontab to automate pulling of information every hour, and storing the pull into my database</li>
+  <br>
+  <li><b>utils.py</b>Different functions I created to be called in app.py</li>
+</ul>
+  
+
+<br><br><br>
+
+
 
 
 <hr>
