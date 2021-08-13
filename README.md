@@ -16,19 +16,15 @@ This project was created as a 2 week project while at Metis. The app is function
 <b>Prelim Code Folder:</b> This notebook holds all the notebooks I used to first poke around with the twitch API, MongoDB, and Plotly
 <ul>
   <li><b>twitch_prelim</b> This notebook was used to learn the intricacies of the Twitch Developers API, finding the right way to retrieve the data needed</li>
-  <br>
   <li><b>mongo_prelim</b> Used to learn how to connect the information pulled from the API into a database</li>
-  <br>
   <li><b>plotly_prelim</b> Used to create different graphs and visualizations, and test different aggregations</li>
 </ul>
 <br><br>
-<b>App Folder:</b>
+<b>App Folder:</b> This folder contains all the code for the Streamlit Sharing app.
 <ul>
-  <li><b>app.py</b> Streamlit app code used to connect everything in a web-based dashboard</li>
-  <br>
-  <li><b>automater.py</b> Python script used in conjunction with crontab to automate pulling of information every hour, and storing the pull into my database</li>
-  <br>
-  <li><b>utils.py</b>Different functions I created to be called in app.py</li>
+  <li><b>app.py</b> - Streamlit app code used to connect everything in a web-based dashboard</li>
+  <li><b>automater.py</b> - Python script used in conjunction with crontab to automate pulling of information every hour, and storing the pull into my database</li>
+  <li><b>utils.py</b> - Different functions I created to be called in app.py</li>
 </ul>
   
 
