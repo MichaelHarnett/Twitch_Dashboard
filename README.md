@@ -2,6 +2,7 @@
 <hr>
 A Data Engineering focused project from Metis
 
+This project was geared towards engineering an end to end daata pipeline. In keeping with the theme of most of my other projects, I chose to center this pipeline around video games. I decided to create a live updating dashboard based on information from Twitch. For those that don't know, Twich is one of the largest video game streaming sites. The idea was to create a dashboard for aspiring new streamers, that would show what the current top games are, the number of viewers watching theses games, and the number of streamers actively streaming the game. I accomplished this by pulling information from Twitch's Developer API and storing the information in a Mongo Atlas data base. I set up a recurring .py script using crontab that pulls the information once every hour, that allows for historical tracking. By storing the pulls in a database, I was able to also display more specific information for a specific game. Such as viewer counts from the last 24 hours, as well as average streamer and viewer count.
 
 # Notebook Descripitons 
 <hr>
