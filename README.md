@@ -1,5 +1,5 @@
 # Twitch Dashboard
-<hr>
+<hr></hr>
 <br></br>
 # This dashboard has been disabled for more current projects
 <br><br>
