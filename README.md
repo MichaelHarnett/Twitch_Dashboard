@@ -1,6 +1,6 @@
 # Twitch Dashboard
 <hr></hr>
-<br></br>
+<br><br>
 # This dashboard has been disabled for more current projects
 <br><br>
 
